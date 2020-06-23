@@ -67,7 +67,7 @@ class ConditionerTest {
         conditioner.setCurrentTemperature(15);
         conditioner.increaseCurrentTemperature();
         assertEquals(15, conditioner.getCurrentTemperature());
-        assertEquals(false, conditioner.isOn());
+        assertFalse(conditioner.isOn());
     }
 
     @Test
@@ -77,6 +77,6 @@ class ConditionerTest {
         conditioner.setCurrentTemperature(30);
         conditioner.decreaseCurrentTemperature();
         assertEquals(30, conditioner.getCurrentTemperature());
-        assertEquals(false, conditioner.isOn());
+        assertFalse(conditioner.isOn());
     }
 }

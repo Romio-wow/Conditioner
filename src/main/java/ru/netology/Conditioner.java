@@ -45,15 +45,20 @@ public class Conditioner {
 
     //создали метод при котором температура увеличивалась на 1 градус
     public void increaseCurrentTemperature() {
-        if (!isOn()) return; // присвоили отрицательное значение  ! (false)
-        if (currentTemperature >= maxTemperature)
+        if (!isOn()) {
+            return; // присвоили отрицательное значение  ! (false)
+        }
+        if (currentTemperature >= maxTemperature) {
             return;
+        }
         currentTemperature++;
     }
 
     //создали метод при котором температура уменьшалось на 1 градус
     public void decreaseCurrentTemperature() {
-        if (!isOn()) return;
+        if (!isOn()) {
+            return;
+        }
         if (currentTemperature <= minTemperature) {
             return;
         }
